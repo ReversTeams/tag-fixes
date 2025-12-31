@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "born_in_chaos_v1:dark_metal_armor_chestplate",
+    "celestisynth:solar_crystal_chestplate",
+    "celestisynth:lunar_stone_chestplate",
+    "thermal:beekeeper_chestplate",
+    "psi:psimetal_exosuit_chestplate",
+    "hexerei:witch_chestplate",
+    "ars_technica:technomancer_chestplate",
+    "born_in_chaos_v1:nightmare_mantleofthe_night_chestplate",
+    "dimdoors:world_thread_chestplate",
+    "dimdoors:garment_of_reality_chestplate",
+    "create:cardboard_chestplate",
+    "bloodmagic:livingplate",
+    "tfmg:steel_chestplate",
+    "born_in_chaos_v1:spiny_shell_armor_chestplate",
+    "minecolonies:plate_armor_chest",
+    "thermal:diving_chestplate",
+    "thermal:hazmat_chestplate",
+    "simplyjetpacks:flux_chestplate",
+    "concatenationcore:cultist_armor_chestplate",
+    "concatenationcore:condensed_ice_armor_chestplate"
+  ]
+}

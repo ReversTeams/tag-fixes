@@ -1,0 +1,33 @@
+{
+  "mod_elements": [],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "tagfixes",
+    "modName": "Tag Fixes",
+    "version": "1.0.0",
+    "description": "Adds tags for items, blocks and entities missing them across various mods to improve compatibility.",
+    "author": "ReversTeam",
+    "websiteURL": "https://curseforge.com/minecraft/mc-mods/tag-fixes",
+    "license": "MIT License",
+    "serverSideOnly": true,
+    "modPicture": "tagfixes",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.reversteam.tagfixes"
+  },
+  "mcreatorVersion": 202500113416
+}

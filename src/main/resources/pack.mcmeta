@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "Adds tags for items, blocks and entities missing them across various mods to improve compatibility."
+  }
+}

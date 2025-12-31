@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ae2:certus_quartz_cutting_knife",
+    "ae2:nether_quartz_cutting_knife",
+    "bloodmagic:sacrificialdagger",
+    "concatenationcore:cutting_tool",
+    "refurbished_furniture:knife"
+  ]
+}
