@@ -11,7 +11,6 @@ logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="ReversTeam"
 description="Adds tags for items, blocks and entities missing them across various mods to improve compatibility."
-displayTest="IGNORE_SERVER_VERSION"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
