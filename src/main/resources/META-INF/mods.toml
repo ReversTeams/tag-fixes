@@ -4,7 +4,7 @@ license="MIT License"
 
 [[mods]]
 modId="tagfixes"
-version="1.0.0"
+version="1.0.1"
 displayName="Tag Fixes"
 displayURL="https://curseforge.com/minecraft/mc-mods/tag-fixes"
 logoFile="logo.png"
