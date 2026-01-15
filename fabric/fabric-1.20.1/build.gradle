@@ -1,0 +1,25 @@
+plugins {
+    id "java"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":common")
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+jar {
+    archiveBaseName.set("tagfixes-fabric")
+    archiveVersion.set("1.20.1")
+    from(project(":common").sourceSets.main.resources)
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from(project(":common").sourceSets.main.resources)
+}

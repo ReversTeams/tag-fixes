@@ -1,0 +1,14 @@
+plugins {
+    id "java"
+}
+
+dependencies {
+    implementation project(":common")
+}
+
+jar {
+    archiveBaseName.set("tagfixes-forge")
+    archiveVersion.set("1.20.1")
+    from(project(":common").sourceSets.main.resources)
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

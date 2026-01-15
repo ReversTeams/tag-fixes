@@ -1,0 +1,19 @@
+plugins {
+    id "java"
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+sourceSets {
+    main {
+        resources.srcDir "src/main/resources"
+    }
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from(project(":common").sourceSets.main.resources)
+}

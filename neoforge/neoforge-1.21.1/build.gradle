@@ -1,0 +1,18 @@
+plugins {
+    id("net.neoforged.moddev") version "2.0.139"
+    id "java"
+}
+
+dependencies {
+    implementation(project(":common"))
+}
+
+jar {
+    archiveBaseName.set("tagfixes-neoforge")
+    archiveVersion.set("1.21.1")
+    from(project(":common").sourceSets.main.resources)
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from(project(":common").sourceSets.main.resources)
+}
