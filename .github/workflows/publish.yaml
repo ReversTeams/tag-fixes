@@ -62,7 +62,7 @@ jobs:
           curseforge-id: 1416898
           modrinth-id: "dJZCkoBx"
           version-range: "[1.21.1,1.22)"
-          version-type: "release"
+          version-type: "beta"
           
           loaders: "fabric,forge,neoforge"
           changelog: "Ported mod to Forge, Neoforge and Fabric 1.21.1+."
