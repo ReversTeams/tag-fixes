@@ -39,10 +39,10 @@ dependencies {
 }
 
 processResources {
-    inputs.property 'version', project.version
+    inputs.properties rootProject.ext.gradleProps
 
     filesMatching('META-INF/neoforge.mods.toml') {
-        expand version: inputs.properties.version
+        expand rootProject.ext.gradleProps
     }
 }
 

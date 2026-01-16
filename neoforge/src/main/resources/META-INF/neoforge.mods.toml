@@ -5,7 +5,7 @@ license = "${mod_license}"
 
 [[mods]]
 modId = "tagfixes"
-version = "${version}"
+version = "${mod_version}"
 displayName = "Tag Fixes"
 authors = "${credits}"
 description = '''
