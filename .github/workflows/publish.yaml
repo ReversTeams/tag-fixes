@@ -1,0 +1,32 @@
+name: Publish Minecraft Mod
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Mod
+        run: ./gradlew build
+
+      - name: Publish mod files
+        uses: tristankechlo/publish-mc-mod@v2.0.0
+        with:
+          mc-version: "1.21.1"
+          mod-version: "1.0.4"
+          curseforge-id: 1416898
+          modrinth-id: "dJZCkoBx"
+          version-range: "[1.21.1,1.22)"
+          version-type: "release"
+          
+          loaders: "fabric,forge,neoforge"
+          changelog: "Ported mod to Forge, Neoforge and Fabric 1.21.1."
+
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
