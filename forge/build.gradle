@@ -45,11 +45,11 @@ processResources {
     }
 }
 
-shadowJar {
-    configurations = [project.configurations.shadowBundle]
-    archiveClassifier = 'dev-shadow'
-}
+// shadowJar {
+//     configurations = [project.configurations.shadowBundle]
+//     archiveClassifier = 'dev-shadow'
+// }
 
-remapJar {
-    inputFile.set shadowJar.archiveFile
-}
+// remapJar {
+//     inputFile.set shadowJar.archiveFile
+// }
