@@ -1,15 +1,15 @@
 modLoader = "javafml"
 loaderVersion = "[4,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "${mod_license}"
 
 [[mods]]
 modId = "tagfixes"
 version = "${version}"
 displayName = "Tag Fixes"
-authors = "Me!"
+authors = "${credits}"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+${mod_description}
 '''
 #logoFile = ""
 
