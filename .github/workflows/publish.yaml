@@ -6,7 +6,43 @@ on:
       - "*"
 
 jobs:
+  test:
+    name: Test (${{ matrix.loader }})
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        loader: [fabric, forge, neoforge]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 21
+          cache: gradle
+
+      - name: Build
+        run: ./gradlew build
+
+      - name: Headless load test
+        run: |
+          case "${{ matrix.loader }}" in
+            fabric)
+              ./gradlew :fabric:runServer --no-daemon
+              ;;
+            forge)
+              ./gradlew :forge:runServer --no-daemon
+              ;;
+            neoforge)
+              ./gradlew :neoforge:runServer --no-daemon
+              ;;
+          esac
   publish:
+    name: Publish
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
