@@ -28,13 +28,13 @@ jobs:
         run: |
           case "${{ matrix.loader }}" in
             fabric)
-              ./gradlew :fabric:build :fabric:runServer --no-daemon
+              ./gradlew :fabric:build -x remapJar -x build :fabric:runServer --no-daemon
               ;;
             forge)
-              ./gradlew :forge:build :forge:runServer --no-daemon
+              ./gradlew :forge:build -x remapJar -x build :forge:runServer --no-daemon
               ;;
             neoforge)
-              ./gradlew :neoforge:build :neoforge:runServer --no-daemon
+              ./gradlew :neoforge:build -x remapJar -x build :neoforge:runServer --no-daemon
               ;;
           esac
   publish:
