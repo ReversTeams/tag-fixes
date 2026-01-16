@@ -24,20 +24,17 @@ jobs:
           java-version: 21
           cache: gradle
 
-      - name: Build
-        run: ./gradlew build
-
-      - name: Headless load test
+      - name: Build + test
         run: |
           case "${{ matrix.loader }}" in
             fabric)
-              ./gradlew :fabric:runServer --no-daemon
+              ./gradlew :fabric:build :fabric:runServer --no-daemon
               ;;
             forge)
-              ./gradlew :forge:runServer --no-daemon
+              ./gradlew :forge:build :forge:runServer --no-daemon
               ;;
             neoforge)
-              ./gradlew :neoforge:runServer --no-daemon
+              ./gradlew :neoforge:build :neoforge:runServer --no-daemon
               ;;
           esac
   publish:
@@ -61,14 +58,14 @@ jobs:
         uses: tristankechlo/publish-mc-mod@v2.0.0
         with:
           mc-version: "1.21.1"
-          mod-version: "1.0.4"
+          mod-version: "1.0.5"
           curseforge-id: 1416898
           modrinth-id: "dJZCkoBx"
           version-range: "[1.21.1,1.22)"
           version-type: "release"
           
           loaders: "fabric,forge,neoforge"
-          changelog: "Ported mod to Forge, Neoforge and Fabric 1.21.1."
+          changelog: "Ported mod to Forge, Neoforge and Fabric 1.21.1+."
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
