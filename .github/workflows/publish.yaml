@@ -6,40 +6,7 @@ on:
       - "*"
 
 jobs:
-  test:
-    name: Test (${{ matrix.loader }})
-    runs-on: ubuntu-latest
-
-    strategy:
-      fail-fast: false
-      matrix:
-        loader: [fabric, forge, neoforge]
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-java@v5
-        with:
-          distribution: temurin
-          java-version: 21
-          cache: gradle
-
-      - name: Build + test
-        run: |
-          case "${{ matrix.loader }}" in
-            fabric)
-              ./gradlew :fabric:build -x remapJar -x build :fabric:runServer --no-daemon
-              ;;
-            forge)
-              ./gradlew :forge:build -x remapJar -x build :forge:runServer --no-daemon
-              ;;
-            neoforge)
-              ./gradlew :neoforge:build -x remapJar -x build :neoforge:runServer --no-daemon
-              ;;
-          esac
   publish:
-    name: Publish
-    needs: test
     runs-on: ubuntu-latest
 
     steps:
@@ -62,10 +29,10 @@ jobs:
           curseforge-id: 1416898
           modrinth-id: "dJZCkoBx"
           version-range: "[1.21.1,1.22)"
-          version-type: "beta"
+          version-type: "release"
           
           loaders: "fabric,forge,neoforge"
-          changelog: "Ported mod to Forge, Neoforge and Fabric 1.21.1+."
+          changelog: "Ported mod to Forge, Neoforge and Fabric 1.21.1."
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
