@@ -28,7 +28,7 @@ jobs:
           mod-version: "1.0.5"
           curseforge-id: 1463230
           modrinth-id: "HTb6xGH1"
-          version-range: "[1.20.1,1.20.1)"
+          version-range: "[1.20.1,1.20.2)"
           version-type: "release"
           loaders: "fabric,forge"
           changelog: "Separated Tag Fixes from Tag Localization Fixes."
