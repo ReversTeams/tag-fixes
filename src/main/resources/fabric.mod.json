@@ -15,8 +15,7 @@
   "environment": "*",
   "depends": {
     "fabricloader": ">=0.18.4",
-    "minecraft": "${minecraft_semver_range}",
-    "lmft": "*"
+    "minecraft": "${minecraft_semver_range}"
   },
   "recommends": {
     "java": ">=${java_version_number}"

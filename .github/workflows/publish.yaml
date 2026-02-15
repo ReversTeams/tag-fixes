@@ -26,14 +26,15 @@ jobs:
         with:
           mc-version: "1.20.1"
           mod-version: "1.0.5"
-          curseforge-id: 1463230
-          modrinth-id: "HTb6xGH1"
+          curseforge-id: 1416898
+          modrinth-id: "dJZCkoBx"
           version-range: "[1.20.1,1.20.2)"
           version-type: "release"
-          loaders: "fabric,forge"
-          changelog: "Separated Tag Fixes from Tag Localization Fixes."
+          loaders: "forge"
+          changelog: |
+            - Separated Tag Fixes from Tag Localization Fixes.
+            - Universalized the jar.
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          fabric-glob: ./build/libs/*-universal-!(*-dev|*-sources|*-javadoc).jar
           forge-glob: ./build/libs/*-universal-!(*-dev|*-sources|*-javadoc).jar

@@ -4,10 +4,3 @@ license = "${mod_license}"
 
 [[mods]]
 modId = "tagfixes"
-
-[[dependencies.tagfixes]]
-modId="lmft"
-mandatory=true
-versionRange = "[0,)"
-ordering="NONE"
-side="BOTH"
