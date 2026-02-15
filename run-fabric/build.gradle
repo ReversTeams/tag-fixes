@@ -1,0 +1,29 @@
+plugins {
+    id "fabric-loom" version "1.10.+"
+}
+
+repositories {
+    maven {
+        url "https://maven.terraformersmc.com/releases"
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
+    mappings "net.fabricmc:yarn:${rootProject.minecraft_version}+build.10:v2"
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_version}"
+
+    implementation project(":")
+
+    // there's some sorcery going on here that makes the root project load in the first place.
+    modImplementation "com.terraformersmc:modmenu:7.2.2"
+    // honestly if you somehow only have one singular datamod installed what are you even doing.
+}
+
+loom {
+    runs {
+        client {
+            runDir "run"
+        }
+    }
+}

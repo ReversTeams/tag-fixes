@@ -1,0 +1,39 @@
+name: Publish Minecraft Mod
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: 'gradle'
+
+      - name: Build Mod
+        run: ./gradlew build
+
+      - name: Publish mod files
+        uses: tristankechlo/publish-mc-mod@v2.0.0
+        with:
+          mc-version: "1.20.1"
+          mod-version: "1.0.5"
+          curseforge-id: 1463230
+          modrinth-id: "HTb6xGH1"
+          version-range: "[1.20.1,1.20.1)"
+          version-type: "release"
+          loaders: "fabric,forge"
+          changelog: "Separated Tag Fixes from Tag Localization Fixes."
+
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          fabric-glob: ./build/libs/*-universal-!(*-dev|*-sources|*-javadoc).jar
+          forge-glob: ./build/libs/*-universal-!(*-dev|*-sources|*-javadoc).jar
