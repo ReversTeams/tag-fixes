@@ -25,13 +25,13 @@ jobs:
         uses: tristankechlo/publish-mc-mod@v2.0.0
         with:
           mc-version: "1.20.1"
-          mod-version: "1.0.5"
+          mod-version: "1.0.6"
           curseforge-id: 1463230
           modrinth-id: "HTb6xGH1"
           version-range: "[1.20.1,1.20.2)"
           version-type: "release"
           loaders: "fabric,forge"
-          changelog: "Separated Tag Fixes from Tag Localization Fixes."
+          changelog: "- Added support for Tarot Cards Remastered"
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
