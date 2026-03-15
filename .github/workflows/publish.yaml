@@ -25,15 +25,16 @@ jobs:
         uses: tristankechlo/publish-mc-mod@v2.0.0
         with:
           mc-version: "1.20.1"
-          mod-version: "1.0.5"
+          mod-version: "1.0.6"
           curseforge-id: 1416898
           modrinth-id: "dJZCkoBx"
           version-range: "[1.20.1,1.20.2)"
           version-type: "release"
           loaders: "forge"
           changelog: |
-            - Separated Tag Fixes from Tag Localization Fixes.
-            - Universalized the jar.
+            - Polished some older localizations
+            - Added 664 new tag localizations
+            - Added support for the following mods: EnderIO, Tempad, Wizards Reborn, ActuallyAdditions, Archeological, BetterArcheology, Biomancy, Bloody Hell, Butchery Lite, ByteBuddies, Eidolon, Etheria, Extractinator, Farmers' Delight, Fishermen's Trap, Fluffy Fur, Goety, Golem Overhaul, Gravel Ores, Hexcasting, Kaleidoscope Doll, Miners Delight, NeepMeat, Ostrea, Quality Tools Forked, Silver Lavender & Necromancy, Sons of Sin, Starcatcher, Steam Powered, ColonyPathingEdition
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
