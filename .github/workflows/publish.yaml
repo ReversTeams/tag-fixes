@@ -24,16 +24,15 @@ jobs:
       - name: Publish mod files
         uses: tristankechlo/publish-mc-mod@v2.0.0
         with:
-          mc-version: "1.20.1"
+          mc-version: "1.21.1"
           mod-version: "1.0.6"
           curseforge-id: 1463230
           modrinth-id: "HTb6xGH1"
-          version-range: "[1.20.1,1.20.2)"
+          version-range: "[1.21.1,1.21.2)"
           version-type: "release"
-          loaders: "fabric,forge"
-          changelog: "- Added support for Tarot Cards Remastered"
+          loaders: "neoforge"
+          changelog: "- Ported to 1.21.1"
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          fabric-glob: ./build/libs/*-universal-!(*-dev|*-sources|*-javadoc).jar
-          forge-glob: ./build/libs/*-universal-!(*-dev|*-sources|*-javadoc).jar
+          neoforge-glob: ./build/libs/*-universal-!(*-dev|*-sources|*-javadoc).jar

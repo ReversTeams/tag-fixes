@@ -1,5 +1,5 @@
 modLoader = "lowcodefml"
-loaderVersion = "${neoforge_version_range}"
+loaderVersion = "[4,)"
 #issueTrackerURL = ""
 license = "${mod_license}"
 
@@ -19,3 +19,10 @@ mandatory = true
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.tagfixes]]
+modId="lmft"
+mandatory=true
+versionRange = "[0,)"
+ordering="NONE"
+side="BOTH"

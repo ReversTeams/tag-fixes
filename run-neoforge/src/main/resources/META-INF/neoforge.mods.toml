@@ -1,5 +1,6 @@
 modLoader = "lowcodefml"
-loaderVersion = "${forge_version_range}"
+loaderVersion = "[4,)"
+#issueTrackerURL = ""
 license = "${mod_license}"
 
 [[mods]]
