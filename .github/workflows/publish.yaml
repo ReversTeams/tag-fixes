@@ -26,13 +26,14 @@ jobs:
         with:
           mc-version: "1.21.1"
           mod-version: "1.0.6"
-          curseforge-id: 1463230
-          modrinth-id: "HTb6xGH1"
+          curseforge-id: 1416898
+          modrinth-id: "dJZCkoBx"
           version-range: "[1.21.1,1.21.2)"
           version-type: "release"
-          loaders: "neoforge"
-          changelog: "- Ported to 1.21.1"
+          loaders: "forge"
+          changelog: |
+            - Re-Ported to 1.21.1
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          neoforge-glob: ./build/libs/*-universal-!(*-dev|*-sources|*-javadoc).jar
+          forge-glob: ./build/libs/*-universal-!(*-dev|*-sources|*-javadoc).jar
