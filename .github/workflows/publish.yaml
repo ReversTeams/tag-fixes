@@ -30,7 +30,7 @@ jobs:
           modrinth-id: "dJZCkoBx"
           version-range: "[1.21.1,1.21.2)"
           version-type: "release"
-          loaders: "forge"
+          loaders: "neoforge"
           changelog: |
             - Re-Ported to 1.21.1
 
