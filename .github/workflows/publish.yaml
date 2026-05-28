@@ -25,13 +25,13 @@ jobs:
         uses: tristankechlo/publish-mc-mod@v2.0.0
         with:
           mc-version: "1.21.1"
-          mod-version: "1.0.6"
+          mod-version: "1.0.7"
           curseforge-id: 1463230
           modrinth-id: "HTb6xGH1"
           version-range: "[1.21.1,1.21.2)"
           version-type: "release"
-          loaders: "neoforge"
-          changelog: "- Ported to 1.21.1"
+          loaders: "fabric,forge"
+          changelog: "- Added tag fix for Thermal Series vegetables"
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
