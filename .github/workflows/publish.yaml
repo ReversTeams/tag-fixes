@@ -30,7 +30,7 @@ jobs:
           modrinth-id: "HTb6xGH1"
           version-range: "[1.21.1,1.21.2)"
           version-type: "release"
-          loaders: "fabric,forge"
+          loaders: "neoforge"
           changelog: "- Added tag fix for Thermal Series vegetables"
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
