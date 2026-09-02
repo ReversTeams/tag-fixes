@@ -32,7 +32,8 @@ jobs:
           version-type: "release"
           loaders: "neoforge"
           changelog: |
-            - Re-Ported to 1.21.1
+            - Added 417 new tag localizations
+            - Added full or partial support for the following mods: Ad Astra, Animus, Artificers Armory, Ascendant Arcana, Bloody Hell, Butchery, Concatenated Additions, Dankstorage, DungeonNowLoading, EnemyExpansion, EnhancedCelestialTweaks, Fracture, Goety, Goety Awaken, Macabre, Malum, Modern Industrialization, Modest Mning, Monster Hunter Villagers, Reverse Eon, Spice of Life Valheim Reforged, Spectrum, Subterannean Wilderness Revival, Tetra, Trinkets, Vampirism, Vampires Delight, Weighted Armor, Whaleborne
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
