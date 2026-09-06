@@ -25,15 +25,14 @@ jobs:
         uses: tristankechlo/publish-mc-mod@v2.0.0
         with:
           mc-version: "1.20.1"
-          mod-version: "1.1.0"
+          mod-version: "1.1.1"
           curseforge-id: 1416898
           modrinth-id: "dJZCkoBx"
           version-range: "[1.20.1,1.20.2)"
           version-type: "release"
           loaders: "forge"
           changelog: |
-            - Added 417 new tag localizations
-            - Added full or partial support for the following mods: Ad Astra, Animus, Artificers Armory, Ascendant Arcana, Bloody Hell, Butchery, Concatenated Additions, Dankstorage, DungeonNowLoading, EnemyExpansion, EnhancedCelestialTweaks, Fracture, Goety, Goety Awaken, Macabre, Malum, Modern Industrialization, Modest Mning, Monster Hunter Villagers, Reverse Eon, Spice of Life Valheim Reforged, Spectrum, Subterannean Wilderness Revival, Tetra, Trinkets, Vampirism, Vampires Delight, Weighted Armor, Whaleborne
+            - Fixed new tags not loading
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
