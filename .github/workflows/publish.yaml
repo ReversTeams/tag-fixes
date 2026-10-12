@@ -25,14 +25,15 @@ jobs:
         uses: tristankechlo/publish-mc-mod@v2.0.0
         with:
           mc-version: "1.20.1"
-          mod-version: "1.1.1"
+          mod-version: "1.2.0"
           curseforge-id: 1416898
           modrinth-id: "dJZCkoBx"
           version-range: "[1.20.1,1.20.2)"
           version-type: "release"
           loaders: "forge"
           changelog: |
-            - Fixed new tags not loading
+            - Added 5378 new localizations.
+            - Added full or partial support for the following mods: Additional Lanterns, The Aether, Alex Caves, All The Arcanist Gear, Animal Pen, Apotheosis, Apothic Enchanting, Aquaculture Delight, Ars Addition, Ars Delight, Artifacts, Beach Party, Better End, Biomes We've Gone, Block Factory's Bosses, Blooming Nature, Blueprint, Botany Pots Mystical, Botany Pots Tier, Brewin and Chewin, Butchercraft, Cataclysm, Chisel, Confluence, Constructions Tick, Cooking for Blockheads, Crabbers Delight, Create Additions, Create Dragon Plus, Critters and Companions, Croptopia, Crystalcraft, Cuisine Delight, Cultural Delight, Deep Aether, Dehydration, Diet, DivineRPG, Doggytalents, Dragonsurvival, Dumplings Delight, Dungeon Delight, Ecologics, EnchantPlus, EndersDelight, Eternal Starlight, Extractinator, Expanded Delight, Factory Blocks, Farming for Blockheads, Forbidden and Arcanus, Fright Delights, Fruit Delights, Frycook Delight, FTB Ultimine, Functional Storage, Handcrafted, Heart and Harvest, Hybrid Aquatic, Hybrid Delight, Ice and Fire, Immersive Engineering, Incendium, Iron Ender Chest, Irons Jewelry, Just Dire Things, Meadow, Megacells, Modular Golems, Modular Routers, More Sounds, More Sniffer Flowers, Nether Delight, Mystical Agriculture, NetherEX, Nova Structures, Origins, Pipez, Pizza Delight, Pneumaticraft, Powah, Productive Bees, Productive Trees, Rechiseled, Regions Unexplored, Relics, Simply Cataclysm, Simply Light, Simply More, Simply Swords, Sophisticated Backpacks, Sophisticated Storage, Starcatcher Delight, Stardew Fishing, Terra, The Bumblezone, Tide, Tough as Nail, Twilight Forest, Twilight Delight, Undergarden Delight, Unusual End, Valhesia Furniture, Valhesia Structures, Voxel, Wilder Nature, Wood We've Got, Wover, Yggdrasil, Youkai's Feasts, Zenith
 
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
